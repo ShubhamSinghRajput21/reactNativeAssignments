@@ -1,3 +1,3 @@
-import Routes from './src/navigation/Routes';
+// import Routes from './src/navigation/Routes';
 
-export default Routes;
+// export default Routes;
