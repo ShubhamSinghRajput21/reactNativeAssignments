@@ -9,4 +9,4 @@ import WebViewExample from './src/Screens/WebViewExample';
 import SwitchExample from './src/Screens/SwitchExample';
 import FlatListExample from './src/Screens/FlatListExample';
 
-AppRegistry.registerComponent(appName, () => FlatListExample);
+AppRegistry.registerComponent(appName, () => WebViewExample);
