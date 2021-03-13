@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
+
 export default class Header extends Component {
   render() {
     return (
