@@ -3,6 +3,7 @@ import {Text, StyleSheet, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../Screens/Home';
+import Account from '../Screens/Account';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
 
 const Tab = createBottomTabNavigator();
@@ -31,20 +32,20 @@ function Cart() {
   );
 }
 
-function Account() {
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Account</Text>
-    </View>
-  );
-}
+// function AccountStack() {
+//   return (
+//     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+//       <Text>Account</Text>
+//     </View>
+//   );
+// }
 
 export default class BottomTab extends Component {
   render() {
     return (
       <NavigationContainer>
         <Tab.Navigator
-          initialRouteName="Home"
+          initialRouteName="Account"
           screenOptions={({route}) => ({
             tabBarIcon: ({focused, color, size}) => {
               let iconName;
@@ -65,9 +66,9 @@ export default class BottomTab extends Component {
           })}
           tabBarOptions={{
             labelStyle: {fontSize: 14, color: '#000000'},
-            style: {
-              height: 100,
-            },
+            // style: {
+            //   height: 80,
+            // },
           }}>
           <Tab.Screen name="Home" component={Home} />
           <Tab.Screen name="Categories" component={Categories} />
